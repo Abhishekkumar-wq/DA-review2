@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IPL Data Visualization Dashboard</title>
+
+  <!-- Google Fonts + Chart.js -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e2a38;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #1e2a38;
+    }
+
+    canvas {
+      width: 100% !important;
+      height: 400px !important;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>IPL Data Visualization Dashboard</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>📅 Matches Per Season</h2>
+      <canvas id="matchesPerSeason"></canvas>
+    </section>
+
+    <section>
+      <h2>🏆 Team Wins Overall</h2>
+      <canvas id="teamWinsOverall"></canvas>
+    </section>
+
+    <section>
+      <h2>🥇 Top 5 Winning Teams</h2>
+      <canvas id="topWinningTeams"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 IPL Analytics | Created using Chart.js
+  </footer>
+
+  <script src="js/charts.js"></script>
+</body>
+</html>
